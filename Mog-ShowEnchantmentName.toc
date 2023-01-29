@@ -1,0 +1,7 @@
+## Interface: 30401
+## Title: Mog-ShowEnchantmentName
+## Notes: Displays the name of the enchant applied to an armor or weapon
+## Author: KING MOG
+## Version: 1.0
+
+Mog-ShowEnchantmentName.lua

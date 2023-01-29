@@ -399,7 +399,7 @@ local itemDB = {
 	[18] = "Ranged",
 }
 
-print("To run Mog-ShowEnchantmentName write /mogench, /showench, /msen")
+print("To run Mog-ShowEnchantmentName write /mogench, /showench or /msen")
 
 local function MogEnch()
 	print("###############################################")
@@ -418,7 +418,8 @@ local function MogEnch()
 					if enchResult then
 						local itemSlotInfo = itemDB[i]
 						print("-- ", itemSlotInfo, "--")
-						print(GetSpellInfo(enchResult))
+						trimmedEnchResult = GetSpellInfo(enchResult):match("(.*) %nil:")
+						print(GetSpellInfo(trimmedEnchResult))
 						print(" ")
 					end
 				end
